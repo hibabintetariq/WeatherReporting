@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/rain_bg"
+
+    tools:context=".WeatherByCoordinate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Get Weather Report of your City"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="40dp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/LatitudeValue"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Latitude Value; e.g. 35.02"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/LongitudeValue"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Longitude Value; e.g. 139.01"
+        android:padding="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:background="#334C78"
+        android:layout_marginTop="50dp"
+        android:text="Search"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

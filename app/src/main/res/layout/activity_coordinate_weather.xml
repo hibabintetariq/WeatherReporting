@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CityWeather"
+    android:background="@drawable/rain_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You entered: "
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="latitude"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/retrievedLatitude"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude: "
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="latitude"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:id="@+id/retrievedLongitude"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="40dp"
+        >
+
+        <TextView
+            android:id="@+id/tempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:id="@+id/degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="° F"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/retrievedTimezoneText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/latitudeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/longitudeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewByCity"
+        android:layout_width="308dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        android:text="View Weather by City Name"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="bottom"/>
+
+    <TextView
+        android:id="@+id/linkText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="4sp"/>
+</LinearLayout>
+
